@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF8">
+    <title>Page Title</title>
+    <style>
+      section > div{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        margin: 3px;
+        display: inline-block;
+      }
+        
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Please click on a box.</h1>
+</header>
+<section></section>
+<script>
+   function clickBox() {
+        alert(`You just clicked on box # ${i}`);
+     }
+    for (let i = 0; i < 48; i++) {
+     var div = document.createElement('div');
+     div.addEventListener('click', clickBox);
+    var boxes = document.getElementsByTagName('section')[0];
+    boxes.appendChild(div);
+    }
+</script>
+
+</body>
+</html>
