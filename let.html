@@ -22,12 +22,12 @@
 </header>
 <section></section>
 <script>
-   function clickBox() {
-        alert(`You just clicked on box # ${i}`);
-     }
+   
     for (let i = 0; i < 48; i++) {
      var div = document.createElement('div');
-     div.addEventListener('click', clickBox);
+     div.onclick= function() {
+        alert(`You just clicked on box # ${i}`);
+     };
     var boxes = document.getElementsByTagName('section')[0];
     boxes.appendChild(div);
     }
