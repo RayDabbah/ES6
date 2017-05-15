@@ -23,14 +23,36 @@
 <section></section>
 <script>
    
-    for (let i = 0; i < 48; i++) {
+    for (var i = 0; i < 48; i++) {
      var div = document.createElement('div');
      div.addEventListener('click' ,function() {
         alert(`You just clicked on box # ${i}`);
      });
+     console.log(i);
     var boxes = document.getElementsByTagName('section')[0];
     boxes.appendChild(div);
     }
+    
+    //this
+    
+    var boat = {
+    size: 'normal',
+    boatInfo: function() {
+        console.log(this === boat);
+        console.log(this.size);
+    }
+};
+
+boat.boatInfo(); // true, 'normal'
+
+var bigBoat = {
+    size: 'big'
+};
+
+bigBoat.boatInfo = boat.boatInfo;
+bigBoat.boatInfo(); // false, 'big'
+
+
 </script>
 
 </body>
