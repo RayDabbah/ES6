@@ -1,4 +1,4 @@
-/*function tag(strings, ...values) {
+function tag(strings, values) {
     if (values[0].split(':')[0] <= 10) {
       values[1] = 'awake';  
     } if (values[0].split(':')[0] > 10){
@@ -14,7 +14,7 @@ var message = tag`Hello! It's ${new Date().toLocaleTimeString()}, so I'm ${''} n
 console.log(message);
 var stringy = 'this is a string';
 console.log('new item: ' + stringy[2]);
-*/
+
 //doing it like the video
 
 function sleepy(strin, val) {
@@ -28,3 +28,4 @@ function sleepy(strin, val) {
 }
 var message2 = sleepy`Hello, it's now ${new Date(2017, 06, 21, 20).getHours()} and I am therefore ${''}`;
 console.log(message2);
+console.log('' + new Date().getHours());
