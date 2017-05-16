@@ -1,4 +1,4 @@
-function tag(strings, ...values) {
+function tag(strings, values) {
     if (values[0].split(':')[0] <= 10) {
       values[1] = 'awake';  
     } if (values[0].split(':')[0] > 10){
