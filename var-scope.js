@@ -4,7 +4,7 @@
 var foo =  'tony';
 
 function rename() {
-     foo = 'shmerel';
+     var foo = 'shmerel';
     return foo;
 }
 
