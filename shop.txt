@@ -1,5 +1,11 @@
-Moshe Gold	Farfel	2.99
-Goldie Gold	Salad	14.77
-Moshe Rumpler	Toast	2.08
-Berel Rumpler	Knish	4.65
-Gedalia Frummer	Green Bean	3.99
+Moshe Gold	Farfel	2.99	4
+Goldie Gold	Salad	14.77	6
+Moshe Rumpler	Toast	2.08	6
+Berel Rumpler	Knish	4.65	9
+Gedalia Frummer	Green Bean	3.99	10
+Gedalia Frummer	Tomatoes	1.55	8
+Moshe Gold	Apples	.99	11
+Moshe Rumpler	Cheese	5.99	4
+Goldie Gold	Cereal	3.99	7
+Berel Rumpler	Tortillas	4.44	5
+Moshe Gold	Tortillas	4.44	5
