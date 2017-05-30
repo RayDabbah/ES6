@@ -11,9 +11,9 @@ var output = fs.readFileSync('shop.txt', 'utf8')
 		Item: line[1], 
 		Price: line[2],
 		Quantity: line[3]
-	})
+	});
 	return customer;
-	}, {})
+	}, {});
 
 
 console.log(JSON.stringify(output, null, 2));

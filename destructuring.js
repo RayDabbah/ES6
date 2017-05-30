@@ -8,28 +8,27 @@ console.log(blla);
 
 //Objects
 
-var morePeople = [
-                  {
-    name: 'Moshe',
-    age: 54,
-    hair: 'black'
-},
-{
-    name: 'Yankel',
-    age: 76,
-    hair: 'blond'
-},
-{
-    name: 'Shmerel',
-    age: 32,
-    hair: 'brown'
-},
-{
-    name: 'Berel',
-    age: 20,
-    hair: 'red'
-}
-];
+var morePeople = [{
+			name: 'Moshe',
+			age: 54,
+			hair: 'black'
+		},
+		{
+			name: 'Yankel',
+			age: 76,
+			hair: 'blond'
+		},
+		{
+			name: 'Shmerel',
+			age: 32,
+			hair: 'brown'
+		},
+		{
+			name: 'Berel',
+			age: 20,
+            hair: 'red'
+    }
+    ];
 //log out all hair colors from the destructured objects
 morePeople.forEach(({hair}) => console.log(hair));
 //destructure the array of objects
