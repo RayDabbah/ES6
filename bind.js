@@ -5,14 +5,14 @@ people = {
         console.log(this.language);
     }
 };
-
+people.speech();
 let detachedPerson = people.speech;
 let boundPerson = detachedPerson.bind(people);
 detachedPerson();
 boundPerson();
-
+detachedPerson.call(people);
+detachedPerson.apply(people);
 //es6 syntax- this is global even though it's in a function
-people.speech();
 
 people2 = {
     language: 'English',
@@ -20,4 +20,3 @@ people2 = {
 };
 
 people2.speech();
-

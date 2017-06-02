@@ -22,9 +22,9 @@ var morePeople = [
 		}
     ];
 var hasElement =
-		(element, obj) => obj.element == element;
+		(element, obj) => obj == element;
 var red =
-		morePeople.filter(x => hasElement("Shmerel", x.name));
+		morePeople.filter(x => hasElement("Yankel", x.name));
 
 console.log(red);
 console.log(hasElement('black', morePeople[0].hair));
