@@ -18,14 +18,14 @@ var morePeople = [
 		{
 			name: 'Berel',
 			age: 20,
-            hair: 'red'
+	                hair: 'red'
 		}
     ];
 var hasElement =
-		(element, obj) => obj == element;
-var red =
-		morePeople.filter(x => hasElement("Yankel", x.name));
+		(element, obj) => obj === element;
+var filtering =
+		morePeople.filter(person => hasElement("Yankel", person.name));
 
-console.log(red);
+console.log(filtering);
 console.log(hasElement('black', morePeople[0].hair));
 console.log(morePeople[0].hair);
